@@ -2,9 +2,9 @@ import asyncio
 from dataclasses import dataclass
 
 from homeassistant.config_entries import ConfigEntry
-from pysyncleo.transport import SyncleoConnection, TransportManager
 
 from .broadcaster import SyncleoVirtualZeroconfBroadcaster
+from .transport import SyncleoConnection, TransportManager
 
 
 @dataclass

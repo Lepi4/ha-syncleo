@@ -1,3 +1,7 @@
+> This fork includes a handshake recovery fix on top of 0.7.0. A missing full
+> handshake reply now times out after 10 seconds, allowing automatic reconnect.
+> See [local patch details and offline tests](custom_components/syncleo/LOCAL-PATCH.md).
+
 # Syncleo (Rusclimate/Polaris) WiFi (UDP) Integration for Home Assistant
 [![GitHub Release][releases-shield]][releases]
 [![Downloads][download-latest-shield]](Downloads)

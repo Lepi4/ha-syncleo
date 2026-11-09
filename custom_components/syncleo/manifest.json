@@ -16,6 +16,8 @@
   "requirements": [
     "pysyncleo==0.4.1"
   ],
-  "version": "0.1.0",
-  "zeroconf": ["_syncleo._udp.local."]
+  "version": "0.7.0+local.1",
+  "zeroconf": [
+    "_syncleo._udp.local."
+  ]
 }

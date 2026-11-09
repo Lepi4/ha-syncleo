@@ -11,7 +11,6 @@ from homeassistant.const import (
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.instance_id import async_get
 from pysyncleo.models import SyncleoUdpDevice
-from pysyncleo.transport import TransportManager
 
 from .broadcaster import SyncleoVirtualZeroconfBroadcaster
 from .const import (
@@ -23,6 +22,7 @@ from .const import (
     DOMAIN,
 )
 from .models import SyncleoDomainData, SyncleoGenericConfigEntry
+from .transport import TransportManager
 from .utils import get_device_profile_by_device
 
 _LOGGER = logging.getLogger(__name__)

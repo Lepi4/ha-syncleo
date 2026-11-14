@@ -1,6 +1,7 @@
 name: "Lint"
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "main"
@@ -41,7 +42,7 @@ jobs:
           run: uv python install
 
         - name: Install dependencies
-          run: uv sync
+          run: uv sync --locked
 
         - name: Run mypy
           run: uv run mypy custom_components/syncleo/ --check-untyped-defs
@@ -59,6 +60,8 @@ jobs:
       - name: Set up Python
         run: uv python install
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --locked
       - name: Run offline recovery regressions
         run: uv run python -m unittest discover -s tests -v
+      - name: Verify Marketplace release archive
+        run: uv run python scripts/build_release.py --version "$(uv run python -c 'import json; print(json.load(open("custom_components/syncleo/manifest.json"))["version"])')"

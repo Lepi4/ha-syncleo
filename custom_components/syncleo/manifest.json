@@ -2,21 +2,21 @@
   "domain": "syncleo",
   "name": "Syncleo (Rusclimate/Polaris) WiFi (UDP)",
   "codeowners": [
-    "@DeKaN"
+    "@Lepi4"
   ],
   "config_flow": true,
   "dependencies": [
     "network",
     "zeroconf"
   ],
-  "documentation": "https://github.com/DeKaN/ha-syncleo",
+  "documentation": "https://github.com/Lepi4/ha-syncleo",
   "integration_type": "device",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/DeKaN/ha-syncleo/issues",
+  "issue_tracker": "https://github.com/Lepi4/ha-syncleo/issues",
   "requirements": [
     "pysyncleo==0.4.1"
   ],
-  "version": "0.7.0+local.1",
+  "version": "0.7.1",
   "zeroconf": [
     "_syncleo._udp.local."
   ]

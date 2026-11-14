@@ -1,6 +1,6 @@
 [project]
 name = "ha-syncleo"
-version = "0.1.0"
+version = "0.7.1"
 description = "A Home Assistant integration to control devices using Syncleo IoT (Rusclimate/Polaris)"
 readme = "README.md"
 authors = [
@@ -12,7 +12,8 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/DeKaN/ha-syncleo.git"
+Repository = "https://github.com/Lepi4/ha-syncleo"
+Issues = "https://github.com/Lepi4/ha-syncleo/issues"
 
 [dependency-groups]
 dev = [

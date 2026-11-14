@@ -7,6 +7,7 @@ body:
     attributes:
       value: |
         Please provide as much context as possible. **Debug logs are almost always required** to see what your device is sending and receiving.
+        Redact Share URLs, tokens, keys, MAC addresses and private network details before posting logs.
 
   - type: dropdown
     id: vendor
